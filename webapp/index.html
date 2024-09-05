@@ -12,7 +12,7 @@
     data-sap-ui-libs="sap.m"
     data-sap-ui-compat-version="edge"
     data-sap-ui-async="true"
-    data-sap-ui-on-init="module:learning/sap/ui5/index"
+    data-sap-ui-on-init="module:sap/ui/core/ComponentSupport"
     data-sap-ui-resource-roots='{
         "learning.sap.ui5": "./"
     }'>
@@ -20,5 +20,6 @@
 </script>
 </head>
 <body class="sapUiBody" id="content">
+    <div data-sap-ui-component data-name="learning.sap.ui5" data-id="container" data-settings='{"id" : "learning.sap.ui5"}'></div>
 </body>
 </html>

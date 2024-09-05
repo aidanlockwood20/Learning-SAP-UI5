@@ -7,12 +7,8 @@ sap.ui.define([
 
     return UIComponent.extend('learning.sap.ui5.Component', {
         metadata : { 
-            'interfaces' : ['sap.ui.core.IAsyncContentCreation'],
-            'rootView' : { 
-                'viewName' : 'learning.sap.ui5.view.App', 
-                "type" : "XML", 
-                "id" : "app" 
-            }
+            interfaces : ['sap.ui.core.IAsyncContentCreation'],
+            manifest : "json"
         },
 
         init() {
@@ -29,7 +25,7 @@ sap.ui.define([
             const i18nModel = new ResourceModel({
                 bundleName: 'learning.sap.ui5.i18n.i18n'
             });
-            this.setModel(i18nModel, 'i18n')
+            this.setModel(i18nModel, 'i18n');
         }
     })
 });
