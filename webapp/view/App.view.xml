@@ -8,6 +8,7 @@
             <pages>
                 <Page title="{i18n>homePageTitle}">
                     <mvc:XMLView viewName="learning.sap.ui5.view.HelloPanel"/>
+                    <mvc:XMLView viewName="learning.sap.ui5.view.InvoiceList"/>
                 </Page>
             </pages>
         </App>

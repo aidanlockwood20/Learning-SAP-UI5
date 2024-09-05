@@ -37,6 +37,10 @@
           }
         }
       },
+      "invoice" : { 
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "Invoices.json"
+      },
       "rootView": {
           "viewName": "learning.sap.ui5.view.App",
           "type": "XML",
