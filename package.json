@@ -1,0 +1,11 @@
+{
+    "name": "learning.sap.ui5",
+    "version": "1.0.0",
+    "description": "The UI5 Walkthrough Application",
+    "scripts": {
+        "start": "ui5 serve -o index.html"
+    },
+    "devDependencies": {
+        "@ui5/cli": "^4.0.6"
+    }
+}
