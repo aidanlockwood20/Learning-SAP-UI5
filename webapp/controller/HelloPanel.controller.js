@@ -13,12 +13,17 @@ sap.ui.define([
 
             MessageToast.show(sMsg);
         },
+
         async onOpenDialog() { 
             this.oDialog ??= await this.loadFragment({
                 name: 'learning.sap.ui5.view.HelloDialog'
             });
 
             this.oDialog.open();
+        },
+
+        onCloseDialog() { 
+            this.byId("helloDialog").close();
         }
     })
 });
