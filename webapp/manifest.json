@@ -35,11 +35,11 @@
             "supportedLocales": [""],
             "fallbackLocale": ""
           }
+        },
+        "invoice" : { 
+          "type": "sap.ui.model.json.JSONModel",
+          "uri": "Invoices.json"
         }
-      },
-      "invoice" : { 
-        "type": "sap.ui.model.json.JSONModel",
-        "uri": "Invoices.json"
       },
       "rootView": {
           "viewName": "learning.sap.ui5.view.App",
