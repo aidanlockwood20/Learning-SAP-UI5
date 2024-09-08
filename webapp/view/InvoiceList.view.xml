@@ -37,7 +37,7 @@
         <Column 
             minScreenWidth="Small"
             demandPopin="true">
-            <Text text="{i18n>ColumnStatus}"/>
+            <Text text="{i18n>columnStatus}"/>
         </Column>
         <Column 
             minScreenWidth="Tablet"
@@ -80,7 +80,7 @@
                         }
                     }"
                     unit="{view>/currency}"
-                    state="{= ${invoice>ExtendedPrice > 50 ? 'Error' : 'Success' } "/>
+                    state="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success' }"/>
             </cells>
         </ColumnListItem>
       </items>

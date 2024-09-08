@@ -5,6 +5,8 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend("learning.sap.ui5.controller.App", {
-        
+        onInit() { 
+            this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
+        }
     })
 });
