@@ -4,13 +4,6 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true">
     <Shell>
-        <App class="myAppDemoWT">
-            <pages>
-                <Page title="{i18n>homePageTitle}">
-                    <mvc:XMLView viewName="learning.sap.ui5.view.HelloPanel"/>
-                    <mvc:XMLView viewName="learning.sap.ui5.view.InvoiceList"/>
-                </Page>
-            </pages>
-        </App>
+        <App class="myAppDemoWT" id="app"/>
     </Shell>
 </mvc:View>

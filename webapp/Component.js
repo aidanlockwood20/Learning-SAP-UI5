@@ -22,10 +22,7 @@ sap.ui.define([
             const oModel = new JSONModel(oData);
             this.setModel(oModel);
 
-            const i18nModel = new ResourceModel({
-                bundleName: 'learning.sap.ui5.i18n.i18n'
-            });
-            this.setModel(i18nModel, 'i18n');
+			this.getRouter().initialize();
         }
     })
 });
