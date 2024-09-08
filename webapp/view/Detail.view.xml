@@ -1,12 +1,17 @@
 <mvc:View
     controllerName="learning.sap.ui5.controller.Detail"
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc">  
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:wt="learning.sap.ui5.control">  
     <Page
         title="{i18n>detailPageTitle}"
         showNavButton="true"
         navButtonPress=".onNavBack">
         <ObjectHeader title="{invoice>ProductName}"
             intro="{invoice>ShipperName}"/>
+            <wt:ProductRating
+                id="rating"
+                class="sapUiSmallMarginBeginEnd"
+                change=".onRatingChange"/>
     </Page>
 </mvc:View>
