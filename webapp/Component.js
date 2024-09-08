@@ -1,8 +1,8 @@
 sap.ui.define([
     'sap/ui/core/UIComponent',
     'sap/ui/model/json/JSONModel',
-    'sap/ui/model/resource/ResourceModel'
-], (UIComponent, JSONModel, ResourceModel) => {
+    'sap/ui/Device'
+], (UIComponent, JSONModel, Device) => {
     'use strict';
 
     return UIComponent.extend('learning.sap.ui5.Component', {
@@ -21,6 +21,10 @@ sap.ui.define([
 
             const oModel = new JSONModel(oData);
             this.setModel(oModel);
+
+            const oDeviceModel = new JSONModel(Device);
+            oDeviceModel.setDefaultBindingMode('OneWay');
+            this.setModel(oDeviceModel, 'device');
 
 			this.getRouter().initialize();
         }

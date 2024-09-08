@@ -7,11 +7,40 @@
         title="{i18n>detailPageTitle}"
         showNavButton="true"
         navButtonPress=".onNavBack">
-        <ObjectHeader title="{invoice>ProductName}"
-            intro="{invoice>ShipperName}"/>
-            <wt:ProductRating
-                id="rating"
-                class="sapUiSmallMarginBeginEnd"
-                change=".onRatingChange"/>
+        <ObjectHeader 
+            responsive="true"
+            fullScreenOptimized="true"
+            number="{
+                parts: [
+                    'invoice>ExtendedPrice',
+                    'view>/currency'
+                ],
+                type: 'sap.ui.model.type.Currency',
+                formatOptions : { 
+                    showMeasure: false
+                }
+            }"
+            numberUnit="{view>/currency}"
+            title="{invoice>ProductName}"
+            intro="{invoice>ShipperName}">
+            <attributes>
+                <ObjectAttribute 
+                    title="{i18n>dateTitle}"
+                    text="{
+                        path: 'invoice>ShippedDate',
+                        type: 'sap.ui.model.type.Date',
+                        formatOptions: { 
+                            style: 'long',
+                            source: { 
+                                pattern: 'yyyy-MM-ddTHH:mm:ss'
+                            }
+                        }
+                    }"/>
+            </attributes>
+        </ObjectHeader>
+        <wt:ProductRating
+            id="rating"
+            class="sapUiSmallMarginBeginEnd"
+            change=".onRatingChange"/>
     </Page>
 </mvc:View>
