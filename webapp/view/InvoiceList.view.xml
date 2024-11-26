@@ -8,6 +8,10 @@
             <Toolbar>
                 <Title text="{i18n>invoiceListTitle}"/>
                 <ToolbarSpacer/>
+                <Button text="Create"
+                    press=".onCreateInvoice"/>
+                <Button text="Delete"
+                    press=".onDeleteInvoice"/>
                 <SearchField 
                     width="50%"
                     search=".onFilterInvoices"/>

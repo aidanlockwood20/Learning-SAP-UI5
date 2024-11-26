@@ -34,6 +34,18 @@ sap.ui.define([
 			oRouter.navTo("detail", {
 				invoicePath: window.encodeURIComponent(oItem.getBindingContext("invoice").getPath().substr(1))
 			});
+        },
+        onCreateInvoice(oEvent) { 
+            const oItem = oEvent.getSource();
+            const oRouter = this.getOwnerComponent().getRouter();
+            oRouter.navTo("create");
+        },
+        onDeleteInvoice(oEvent) { 
+            const oItem = oEvent.getSource();
+            const oRouter = this.getOwnerComponent().getRouter();
+            oRouter.navTo("delete", { 
+                invoicePath: window.encodeURIComponent(oItem.getBindingContext("invoice").getPath().substr(1))
+            });
         }
     })
 });

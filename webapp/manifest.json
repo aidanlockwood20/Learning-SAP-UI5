@@ -83,6 +83,16 @@
           "pattern": "detail/{invoicePath}", 
           "name": "detail", 
           "target": "detail"
+        },
+        {
+          "pattern": "create",
+          "name": "create",
+          "target": "create"
+        },
+        {
+          "pattern": "delete/{invoicePath}", 
+          "name": "delete", 
+          "target": "delete"
         }
       ],
         "targets": { 
@@ -93,6 +103,14 @@
           "detail": {
             "id": "detail",
             "name": "Detail"
+          },
+          "create": { 
+            "id": "create",
+            "name": "Create"
+          },
+          "delete": { 
+            "id": "delete",
+            "name": "Delete"
           }
         }
       }

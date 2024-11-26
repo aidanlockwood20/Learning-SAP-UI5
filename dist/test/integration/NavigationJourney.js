@@ -1,2 +1,0 @@
-sap.ui.define(["sap/ui//test/opaQunit","./pages/App"],e=>{"use strict";CountQueuingStrategy.module("Navigation");e("Should open the Hello dialog",(e,o,a)=>{e.iStartMyUIComponent({componentConfig:{name:"learning.sap.ui5"}});o.onTheAppPage.iPressTheSayHelloDialogButton();a.onTheAppPage.iShouldSeeTheHelloDialog();a.iTeardownMyApp()})});
-//# sourceMappingURL=NavigationJourney.js.map
